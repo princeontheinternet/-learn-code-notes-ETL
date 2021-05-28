@@ -5,11 +5,11 @@
 1. Stage Airports Data Using the RDS Query Component.
    
 
-    ● Component Used: Using RDS Query (OJ). 
+       ● Component Used: Using RDS Query (OJ). 
 
-    ● Job Name: DWH Orchestration  
+       ● Job Name: DWH Orchestration  
 
-    ● Target Table: public."training_airports"
+       ● Target Table: public."training_airports"
 
 ![img.png](img.png)
 
@@ -21,16 +21,16 @@
 1. Data Preparation - Create Tables
 
 
-    ● Component Used: ◉ Create table (OJ), 
-                      ◉ SQL Script (OJ), 
-  
+       ● Component Used: ◉ Create table (OJ), 
+                         ◉ SQL Script (OJ), 
 
-    ● Job Name: Create Tables
-                
 
-    ● Target Table: ◉ db_source."training_date_day_lookup"
-                    ◉ db_source."training_us_state_lookup"
-                    ◉ db_dwh."fct_flightanalysis_summary"
+       ● Job Name: Create Tables
+
+
+       ● Target Table: ◉ db_source."training_date_day_lookup"
+                       ◉ db_source."training_us_state_lookup"
+                       ◉ db_dwh."fct_flightanalysis_summary"
 
 
 ![img_1.png](img_1.png)
@@ -40,12 +40,12 @@
 2. Join Each Airport to its US State
 
 
-    ● Component Used: ◉ Table Input (TJ), 
-                      ◉ Join (TJ)  
+       ● Component Used: ◉ Table Input (TJ), 
+                         ◉ Join (TJ)  
 
-    ● Job Name: load_dmn_airport 
+       ● Job Name: load_dmn_airport 
 
-    ● Target Table:
+       ● Target Table:
 
 ![img_2.png](img_2.png)
 
@@ -57,11 +57,11 @@
 1. Create the Airports Dimension Table
 
 
-    ● Component Used: Rewrite Table (TJ), 
+       ● Component Used: Rewrite Table (TJ), 
 
-    ● Job Name: load_dmn_airport 
+       ● Job Name: load_dmn_airport 
 
-    ● Target Table: db_dwh."dmn_airport"
+       ● Target Table: db_dwh."dmn_airport"
 
 ![img_3.png](img_3.png)
 
