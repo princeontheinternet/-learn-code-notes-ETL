@@ -5,12 +5,12 @@
 1. Load Flights Data Using the S3 Load Generator Component
 
 
-    ● Component Used: S3 Load Generator (OJ).
-                        ◉ It creates a create table and S3 load component.
+        ● Component Used: S3 Load Generator (OJ).
+                            ◉ It creates a create table and S3 load component.
 
-    ● Job Name: DWH Orchestration  
+        ● Job Name: DWH Orchestration  
 
-    ● Target Table: db_source."training_flights"
+        ● Target Table: db_source."training_flights"
 
 ![img.png](img.png)
 
@@ -22,13 +22,13 @@
 1. Data Preparation - Create Views
 
 
-    ● Component Used: SQL Script (OJ)
+        ● Component Used: SQL Script (OJ)
 
-    ● Job Name: Create Flights View 
+        ● Job Name: Create Flights View 
 
-    ● Target View: ◉ db_source."vew_flights_2016"
-                   ◉ db_source."vew_flights_2017"
-                   ◉ db_source."vew_flights_2018"    
+        ● Target View: ◉ db_source."vew_flights_2016"
+                       ◉ db_source."vew_flights_2017"
+                       ◉ db_source."vew_flights_2018"    
 
 ![img_1.png](img_1.png)
 
@@ -38,13 +38,13 @@
 2. Load Multiple Flights Data Files Using the Fixed Iterator Component
 
 
-    ● Component Used: Fixed Iterator (OJ)
-                      ◉ Used Environment Variable and gave values 2016, 2017, 2018.
-                      ◉ Used the env variable in s3 path to load files in iteration to table.
+        ● Component Used: Fixed Iterator (OJ)
+                          ◉ Used Environment Variable and gave values 2016, 2017, 2018.
+                          ◉ Used the env variable in s3 path to load files in iteration to table.
 
-    ● Job Name: DWH Orchestration   
+        ● Job Name: DWH Orchestration   
 
-    ● Target Table: db_source."training_flights"
+        ● Target Table: db_source."training_flights"
  
 
 ![img_2.png](img_2.png)
@@ -57,13 +57,13 @@
 1. Control Business Logic with Logical Operators
 
 
-    ● Component Used: 
-          ◉ If,
-          ◉ And,
-          ◉ End Failure,
-          ◉ End Success
-    
-    ● Job Name: DWH Orchestration   
+        ● Component Used: 
+              ◉ If,
+              ◉ And,
+              ◉ End Failure,
+              ◉ End Success
+
+        ● Job Name: DWH Orchestration   
     
 
 
@@ -77,12 +77,12 @@
 1. Control Business Logic with Transactions
 
 
-    ● Component Used: 
-        ◉ Begin - indicates the point where the transaction starts.
-        ◉ Commit
-        ◉  Rollback
-    
-    ● Job Name: Orchestration Transaction Control
+        ● Component Used: 
+            ◉ Begin - indicates the point where the transaction starts.
+            ◉ Commit
+            ◉  Rollback
+
+        ● Job Name: Orchestration Transaction Control
 
 
 ![img_4.png](img_4.png)
@@ -92,7 +92,7 @@
 2. Schedule a Job
 
  
-    ● Job Name: DWH Orchestration 
+        ● Job Name: DWH Orchestration 
 
 
 ---
@@ -103,14 +103,14 @@
 1. Cleanse Data and Rank Flights Based on Their Airtime
 
 
-    ● Component Used: 
-        ◉ Input Table (pointing to views/tables)
-        ◉ Unite
-        ◉ Multi Table Input 
-        ◉ Filter
-        ◉ Rank
-    
-    ● Job Name: Load fct flight analysis (TJ)
+        ● Component Used: 
+            ◉ Input Table (pointing to views/tables)
+            ◉ Unite
+            ◉ Multi Table Input 
+            ◉ Filter
+            ◉ Rank
+
+        ● Job Name: Load fct flight analysis (TJ)
     
 
 ![img_5.png](img_5.png)
@@ -123,12 +123,12 @@
 1. Convert Distances Using The Fixed Flow Component
 
 
-    ● Component Used:
-        ◉ Fixed Flow
-        ◉ Join
-        ◉ Calculator
+        ● Component Used:
+            ◉ Fixed Flow
+            ◉ Join
+            ◉ Calculator
 
-    ● Job Name: Load fct flight analysis (TJ)
+        ● Job Name: Load fct flight analysis (TJ)
 
 
 ![img_6.png](img_6.png)
@@ -141,9 +141,9 @@
 1. Create the Fact Table For Flight Analysis
 
 
-    ● Component Used: Rewrite Table
+        ● Component Used: Rewrite Table
 
-    ● Job Name: Load fct flight analysis (TJ)
+        ● Job Name: Load fct flight analysis (TJ)
 
 ![img_7.png](img_7.png)
 
@@ -155,11 +155,11 @@
 1. Load Data Into The Fact Table And Calculate the Average Delay Per Flight
 
 
-    ● Component Used: 
-        ◉ Calculator
-        ◉ Aggregate
-        ◉ Table Output
+        ● Component Used: 
+            ◉ Calculator
+            ◉ Aggregate
+            ◉ Table Output
 
-    ● Job Name: Load fct flight analysis (TJ)
+        ● Job Name: Load fct flight analysis (TJ)
 
 ![img_8.png](img_8.png)
