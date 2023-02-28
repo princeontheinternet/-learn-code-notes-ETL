@@ -12,7 +12,7 @@
 
         ● Target Table: db_source."training_flights"
 
-![img.png](img.png)
+![img.png](img/img.png)
 
 ---
 <br>
@@ -30,7 +30,7 @@
                        ◉ db_source."vew_flights_2017"
                        ◉ db_source."vew_flights_2018"    
 
-![img_1.png](img_1.png)
+![img_1.png](img/img_1.png)
 
 
 <br>
@@ -47,7 +47,7 @@
         ● Target Table: db_source."training_flights"
  
 
-![img_2.png](img_2.png)
+![img_2.png](img/img_2.png)
 
 ---
 <br>
@@ -67,7 +67,7 @@
     
 
 
-![img_3.png](img_3.png)
+![img_3.png](img/img_3.png)
 
 ---
 <br>
@@ -85,7 +85,7 @@
         ● Job Name: Orchestration Transaction Control
 
 
-![img_4.png](img_4.png)
+![img_4.png](img/img_4.png)
 
 <br>
 
@@ -113,7 +113,7 @@
         ● Job Name: Load fct flight analysis (TJ)
     
 
-![img_5.png](img_5.png)
+![img_5.png](img/img_5.png)
 
 ---
 <br>
@@ -131,7 +131,7 @@
         ● Job Name: Load fct flight analysis (TJ)
 
 
-![img_6.png](img_6.png)
+![img_6.png](img/img_6.png)
 
 ---
 <br>
@@ -145,7 +145,7 @@
 
         ● Job Name: Load fct flight analysis (TJ)
 
-![img_7.png](img_7.png)
+![img_7.png](img/img_7.png)
 
 ---
 <br>
@@ -162,4 +162,4 @@
 
         ● Job Name: Load fct flight analysis (TJ)
 
-![img_8.png](img_8.png)
+![img_8.png](img/img_8.png)

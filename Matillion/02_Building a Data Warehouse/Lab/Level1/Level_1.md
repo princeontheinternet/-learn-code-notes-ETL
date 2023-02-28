@@ -11,7 +11,7 @@
 
        ● Target Table: public."training_airports"
 
-![img.png](img.png)
+![img.png](img/img.png)
 
 ---
 <br>
@@ -33,7 +33,7 @@
                        ◉ db_dwh."fct_flightanalysis_summary"
 
 
-![img_1.png](img_1.png)
+![img_1.png](img/img_1.png)
 
 <br>
 
@@ -47,7 +47,7 @@
 
        ● Target Table:
 
-![img_2.png](img_2.png)
+![img_2.png](img/img_2.png)
 
 ---
 <br>
@@ -63,7 +63,7 @@
 
        ● Target Table: db_dwh."dmn_airport"
 
-![img_3.png](img_3.png)
+![img_3.png](img/img_3.png)
 
 ---
 <br>

@@ -18,7 +18,7 @@ Q. what cloud Data Warehouse technologies are supported on Matillion?
 
 Q. Matillion ETL Architecture.
 
-![img.png](img.png)
+![img/img.png](img.png)
 
 ---
 <br>
